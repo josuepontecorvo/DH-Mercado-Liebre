@@ -15,8 +15,10 @@ const publicPath = path.resolve(__dirname, 'public');
 // Agregamos el middleware para configurar la carpeta de archivos estáticos
 app.use(express.static(publicPath));
 
-// Definimos la ruta que responda a GET "/" con la vista home.html
+// Definimos las rutas que responda a GET
 app.get('/', (req, res) => res.sendFile(path.resolve(viewsPath, 'home.html')));
+app.get('/register', (req, res) => res.sendFile(path.resolve(viewsPath, 'register.html')));
+app.get('/login', (req, res) => res.sendFile(path.resolve(viewsPath, 'login.html')));
 
 // Levantamos el servidor
 app.listen(port, () => console.log(`Listening on port ${port}!`));
