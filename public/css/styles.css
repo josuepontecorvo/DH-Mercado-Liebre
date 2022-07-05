@@ -186,6 +186,7 @@ main section article i,
 
 .login div.form-button {
     padding: 10px 20px;
+    margin-bottom: 30px;
 }
 
 .login-form .form-button button {
@@ -234,6 +235,7 @@ div.top-header form {
     max-width: 280px;
     display: flex;
     justify-content: flex-end;
+    align-items: stretch;
 }
 
 header figure.logo{
@@ -266,14 +268,15 @@ header ul li a{
 header .form .input{
     display: inline-block;
     font-size: 12px;
-    padding: 2px;
+    padding: 8px 10px;
     margin-bottom: 2px;
     width: 70%;
     background-color: #FFF;
     border: 1px solid #000;
     outline: none;
     color: #666;
-    padding: 2px;
+    border: none;
+    border-radius: 5px 0 0 5px;
 }
 
 header .form .submit{
@@ -287,7 +290,9 @@ header .form .submit{
     color: #000;
     font-weight: bold;
     background-color: #FFF;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
+    border: none;
+    border-radius: 0 5px 5px 0;
     width: 12%;
     margin-bottom: 2px;
 }
@@ -344,6 +349,10 @@ footer i {
     color: #0044AA;
     font-size: 2em;
     margin: 10px 0;
+}
+
+footer i:hover {
+    color: #39b54a;
 }
 
 footer p {
@@ -427,6 +436,12 @@ footer p {
     header nav {
         padding: 0 5%;
     }
+
+    /* header .form .input {
+        padding: 2px;
+    } */
+
+    /*FOOTER*/
 
     footer {
         display: flex;

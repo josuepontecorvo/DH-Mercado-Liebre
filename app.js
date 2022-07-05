@@ -21,4 +21,4 @@ app.get('/register', (req, res) => res.sendFile(path.resolve(viewsPath, 'registe
 app.get('/login', (req, res) => res.sendFile(path.resolve(viewsPath, 'login.html')));
 
 // Levantamos el servidor
-app.listen(port, () => console.log(`Listening on port ${port}!`));
+app.listen(process.env.PORT || port, () => console.log(`Server running`));
